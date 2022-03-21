@@ -42,4 +42,26 @@
         }
       });
 
+      // $(".card").hover(function(){
+
+      //   card.addClass("card-shadow");
+
+      // });
+
+      // $(".card").hover(
+      //   function() {
+      //     $( this ).addClass( $( "card-shadow" ) );
+      //   }, function() {
+      //     $( this ).removeClass( "card-shadow" );
+      //   }
+      // );
+
+      $( ".card" ).hover(
+        function() {
+          $(this).addClass('shadow-lg'); 
+        }, function() {
+          $(this).removeClass('shadow-lg');
+        }
+      );
+
 })(jQuery);
