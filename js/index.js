@@ -8,7 +8,7 @@
       var bodyScroll = $(window).scrollTop(),
           navbar = $(".navbar");
   
-      if(bodyScroll > 130){
+      if(bodyScroll > 80){
   
           navbar.addClass("nav-scroll");
           $('.navbar-logo img').attr('src','images/logo-black.png');
@@ -28,7 +28,7 @@
         var bodyScroll = $(window).scrollTop(),
         navbar = $(".navbar");
         
-        if(bodyScroll > 130){
+        if(bodyScroll > 80){
         
         navbar.addClass("nav-scroll");
         $('.navbar-logo img').attr('src','images/logo-black.png');
