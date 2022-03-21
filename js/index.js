@@ -42,20 +42,18 @@
         }
       });
 
-      // $(".card").hover(function(){
+      // SMOOTH SCROLL
+      $(function() {
+        $('.nav-link, .custom-btn-link').on('click', function(event) {
+          var $anchor = $(this);
+          $('html, body').stop().animate({
+              scrollTop: $($anchor.attr('href')).offset().top - 80
+          }, 100);
+          event.preventDefault();
+        });
+      }); 
 
-      //   card.addClass("card-shadow");
-
-      // });
-
-      // $(".card").hover(
-      //   function() {
-      //     $( this ).addClass( $( "card-shadow" ) );
-      //   }, function() {
-      //     $( this ).removeClass( "card-shadow" );
-      //   }
-      // );
-
+      // CARD HOVER
       $( ".card" ).hover(
         function() {
           $(this).addClass('shadow-lg'); 

@@ -435,14 +435,19 @@ b, strong {
   .animated-info {
     width: 410px;
   }
-}
-@media (max-width: 410px) {
+
   .about {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
 
+  .animated-info {
+    width: 410px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 410px) {
   .animated-info {
     width: 280px;
     margin-bottom: 50px;
