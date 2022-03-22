@@ -48,6 +48,7 @@ p {
 
 .p-about{
   font-size: 20px;
+  color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -118,6 +119,13 @@ b, strong {
 
 .animated-item {
   color: #ffc200;
+  /* color: #000000; */
+}
+
+.animated-text{
+  /* color: #ffc200; */
+  /* color: #000000; */
+  color: #5b5b5b;
 }
 
 .animated-item {
@@ -432,24 +440,20 @@ b, strong {
     margin: 10px 80px;
   }
 
-  .animated-info {
-    width: 410px;
-  }
-
   .about {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
 
-  .animated-info {
-    width: 410px;
-    margin-bottom: 50px;
+  .about::before, .contact::before {
+    /* background-image: url(../images/background.jpg); */
+    background-image: none;
   }
 }
-@media (max-width: 410px) {
+@media (max-width: 420px) {
   .animated-info {
-    width: 280px;
+    width: 320px;
     margin-bottom: 50px;
   }
 }
@@ -561,8 +565,8 @@ body {
   content: '';
   bottom: 0;
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.0509803922);
-  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.4)
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2)
+  /* box-shadow: inset 0 0 0 1000px rgba(168, 137, 137, 0.1) */
 }
 
 .btn-scroll {
@@ -600,8 +604,7 @@ body {
   content: '';
   bottom: 0;
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.0509803922);
-  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.4)
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2)
 }
 
 .skills-card {
@@ -630,6 +633,6 @@ body {
   width: 300px;
 }
 
-.card-shadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.js .animate-box {
+  opacity: 0;
 }
